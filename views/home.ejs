@@ -6,9 +6,11 @@
   <body>
     <% include partials/scripts.ejs %>
   </body>
-  <div class="hero-image">
-  <h1 id="hero-title"><%= title %></h1>
-  </div>
+
+<div id="hero-image">
+    <h1 id="hero-title"><%= title %></h1>
+</div>
+
   <% for(var i = 0; i < movies.length; i++){ %>
   <img src="/images/<%= movies[i].poster %>" class="img-responsive">
   <% } %>
